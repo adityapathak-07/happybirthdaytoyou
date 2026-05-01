@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔐 PASSWORD SCREEN -->
+<div id="lockScreen">
+    <div class="lock-box">
+        <h2>Enter Password 💖</h2>
+        <input type="password" id="password" placeholder="Enter secret">
+        <button onclick="checkPassword()">Unlock</button>
+        <p id="error"></p>
+    </div>
+</div>
+
+<!-- 🎬 INTRO -->
+<div id="intro">
+    <h1>For Someone Special ❤️</h1>
+</div>
+
+<!-- 🎵 MUSIC -->
+<audio id="music" src="music.mp3" loop></audio>
+<button id="musicBtn">🎵</button>
+
+<!-- 🎆 FIREWORK CANVAS -->
+<canvas id="fireworks"></canvas>
+
+<!-- 💖 HEARTS -->
+<div class="hearts"></div>
+
+<!-- MAIN CONTENT -->
+<div id="main">
+
+    <h1 class="title">Happy Birthday My Love 💖</h1>
+
+    <button id="openCards">Open Your Surprise 🎁</button>
+
+    <!-- 💌 CARDS -->
+    <div class="cards">
+
+        <div class="card">
+            <div class="front">💌</div>
+            <div class="back">
+                You are the most beautiful part of my life ❤️
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">🎂</div>
+            <div class="back">
+                I wish all your dreams come true ✨
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">💖</div>
+            <div class="back">
+                I will always stand beside you 💞
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
