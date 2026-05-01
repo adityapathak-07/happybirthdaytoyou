@@ -1,74 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday ❤️</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Lumbini Birthday</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-<!-- 🔐 PASSWORD SCREEN -->
-<div id="lockScreen">
-    <div class="lock-box">
-        <h2>Enter Password 💖</h2>
-        <input type="password" id="password" placeholder="Enter secret">
-        <button onclick="checkPassword()">Unlock</button>
-        <p id="error"></p>
+<!-- MAIN BUTTON -->
+<div class="btn">
+    <button id="openCard">Click Here For B'day Wish 💌</button>
+</div>
+
+<!-- CARD -->
+<div class="boxMail">
+    <i class="fa-solid fa-xmark" id="closeCard"></i>
+
+    <div class="boxMail-container">
+
+        <!-- PAGE 1 -->
+        <div class="card1">
+            <div class="userImg">
+                <img src="images/unnamed.png">
+            </div>
+            <h3>Happy Birthday 🎂</h3>
+        </div>
+
+        <!-- PAGE 2 -->
+        <div class="card2">
+            <div class="card2-content">
+                <h3>My Dearest ❤️</h3>
+                <h2>
+                    Happy Birthday to the most beautiful soul in my life.  
+                    Today is your day, and I just want you to be truly happy.
+                </h2>
+            </div>
+        </div>
+
+        <!-- PAGE 3 -->
+        <div class="card3">
+            <div class="card2-content">
+                <h3>7 Years 💫</h3>
+                <h2>
+                    For the past 7 years, you have been my strength, my peace,
+                    and the most meaningful part of my life.
+                </h2>
+
+                <div class="memory">
+                    <img src="images/m1.jpg">
+                    <img src="images/m2.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 4 -->
+        <div class="card4">
+            <div class="card2-content">
+                <h3>I’m Sorry 💌</h3>
+                <h2>
+                    I know I made mistakes and couldn’t always give you
+                    the happiness you deserved. I am deeply sorry.
+                </h2>
+
+                <div class="memory">
+                    <img src="images/m3.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 5 -->
+        <div class="card5">
+            <div class="card2-content">
+                <h3>Forever ❤️</h3>
+                <h2>
+                    No matter what happens, I will always wish the best for you.  
+                    You will always be special to me.  
+                    Happy Birthday once again 💖
+                </h2>
+            </div>
+        </div>
+
     </div>
 </div>
 
-<!-- 🎬 INTRO -->
-<div id="intro">
-    <h1>For Someone Special ❤️</h1>
-</div>
+<script>
+document.getElementById("openCard").onclick = () => {
+    document.querySelector(".boxMail").classList.add("active");
+};
 
-<!-- 🎵 MUSIC -->
-<audio id="music" src="music.mp3" loop></audio>
-<button id="musicBtn">🎵</button>
+document.getElementById("closeCard").onclick = () => {
+    document.querySelector(".boxMail").classList.remove("active");
+};
+</script>
 
-<!-- 🎆 FIREWORK CANVAS -->
-<canvas id="fireworks"></canvas>
-
-<!-- 💖 HEARTS -->
-<div class="hearts"></div>
-
-<!-- MAIN CONTENT -->
-<div id="main">
-
-    <h1 class="title">Happy Birthday My Love 💖</h1>
-
-    <button id="openCards">Open Your Surprise 🎁</button>
-
-    <!-- 💌 CARDS -->
-    <div class="cards">
-
-        <div class="card">
-            <div class="front">💌</div>
-            <div class="back">
-                You are the most beautiful part of my life ❤️
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="front">🎂</div>
-            <div class="back">
-                I wish all your dreams come true ✨
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="front">💖</div>
-            <div class="back">
-                I will always stand beside you 💞
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
